@@ -25,6 +25,17 @@ function visProdukt(produkt) {
     var rabatpris = Math.ceil(produkt.pris - (produkt.pris * produkt.rabatsats / 100));
     klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
 
+    klon.querySelector(".data_billede").src = "imgs/large/" + produkt.billede + ".jpg";
+
+    if (produkt.udsolgt == false) {
+        //produktet er ikke udsolgt
+        // udsolgttekst skal fjernes
+        var udsolgttext = klon.querySelector(".udsolgttext");
+        udsolgttext.parentNode.removeChild(udsolgttext);
+    } else {
+        klon.querySelector(".pris").classList.add("udsolgt");
+    }
+
     //append klon til .produkt_liste
     document.querySelector(".produktliste").appendChild(klon);
 }
