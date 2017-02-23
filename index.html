@@ -65,24 +65,28 @@
             <div class="container" id="tourpackages-carousel">
 
                 <div class="row">
-
-                    <div class="col-lg-6">
-                        <div class="thumbnail">
-                            <img src="imgs/large/caviarbruschetta.jpg" alt="">
-                            <div class="caption">
-                                <h4>Caviar bruschetta</h4>
-                                <p class="thumbnailtext">
-                                    Til denne dejlige Bruschetta anvender vi kun de dejligste sibiriske Caviar. Caviarerne presses ud af fiskene mens de stadig er levende, og vædes derefter i Putinka Vodka. Der er masser af bjerggedesmør på bruschettaene.
-                                </p>
-                                <div class="row">
-                                    <p class="pristext col-lg-6">Pris: 49kr. </p>
-
-                                    <p class="pristext col-lg-6 text-right">Ikke vegetarisk</p>
+                    <template id="produkt_template">
+                        <div class="col-lg-6">
+                            <div class="thumbnail">
+                                <img class="data_billede img-responsive " src="imgs/large/caviarbruschetta.jpg" alt="">
+                                <div class="caption">
+                                    <h4 class="data_navn">DATA_NAVN</h4>
+                                    <p class="thumbnailtext">
+                                        Til denne dejlige Bruschetta anvender vi kun de dejligste sibiriske Caviar. Caviarerne presses ud af fiskene mens de stadig er levende, og vædes derefter i Putinka Vodka. Der er masser af bjerggedesmør på bruschettaene.
+                                    </p>
+                                    <div class="row">
+                                        <p class="pristext udsolgt col-lg-4 pris"> Pris: <span class="data_pris"> DATA_PRIS</span>,- </p>
+                                        <p class="pristext rabattext col-lg-12"> Rabatpris: <span class="data_rabatpris">DATA_RABATPRIS </span>,- </p>
+                                        <!--skal kun vises hvis der er rabat -->
+                                        <!-- TODO: sæt udsolgt class -->
+                                        <p class="pristext udsolgttext col-lg-6 text-left">Udsolgt</p>
+                                        <!--skal kun vises hvis udsolgt -->
+                                        <p class="pristext col-lg-6 text-right">Ikke vegetarisk</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
+                    </template>
                     <div class="col-lg-6">
                         <div class="thumbnail">
                             <img src="imgs/large/ringbroed.jpg" alt="">
@@ -94,7 +98,7 @@
 
                                 </p>
                                 <div class="row">
-                                    <p class="pristext gammeltext  col-lg-12"><del> Pris: 39kr.</del> </p>
+                                    <p class="pristext gammeltext col-lg-12"> Pris: 39kr. </p>
                                     <p class="pristext rabattext col-lg-6">Rabatpris: 19.5kr. </p>
                                     <p class="pristext col-lg-6 text-right">Vegetarisk</p>
                                 </div>

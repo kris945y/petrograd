@@ -56,6 +56,7 @@ p {
 }
 .gammeltext {
     color: rgb(117, 28, 48);
+    text-decoration: line-through;
 }
 .rabattext {
     color: rgb(50, 205, 50);
