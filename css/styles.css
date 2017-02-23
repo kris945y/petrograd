@@ -1,0 +1,71 @@
+/*!
+ * Custom styles af DIG
+ */
+
+
+/*Generelt*/
+
+body {}
+.navbar-inverse {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: none;
+}
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+    padding: 0;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: rgb(117, 28, 48);
+}
+.navbar-inverse .navbar-brand {
+    color: black;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+}
+.farve1 {
+    background-color: rgba(76, 120, 98, 0.8);
+}
+h1,
+h2,
+p {
+    color: white;
+}
+.streg {
+    margin-top: 10px;
+    background-color: white;
+    height: 2px;
+    border-radius: 5px;
+}
+.thumbnail {
+    margin-top: 100px;
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.thumbnail img {
+    width: 100%;
+}
+.thumbnailtext {
+    color: black;
+}
+.pristext {
+    color: black;
+}
+.gammeltext {
+    color: rgb(117, 28, 48);
+}
+.rabattext {
+    color: rgb(50, 205, 50);
+}
+.h2hoved {
+    color: #2d483a;
+}
+.farve2 {
+    background-color: #fef2f2;
+}
+.udsolgtimg {
+    -webkit-filter: blur(10px);
+}
