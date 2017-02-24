@@ -70,3 +70,6 @@ p {
 button {
     margin-left: 10px;
 }
+.buttontext {
+    color: black;
+}
