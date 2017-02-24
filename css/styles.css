@@ -61,12 +61,12 @@ p {
 .rabatpris {
     color: rgb(50, 205, 50);
 }
-.h2hoved {
-    color: #2d483a;
-}
 .farve2 {
     background-color: #fef2f2;
 }
 .udsolgtimg {
     -webkit-filter: blur(10px);
+}
+button {
+    margin-left: 10px;
 }

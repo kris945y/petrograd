@@ -44,5 +44,10 @@ function visProdukt(produkt) {
 
     }
     //append klon til .produkt_liste
-    document.querySelector(".produktliste").appendChild(klon);
+    //document.querySelector(".produktliste").appendChild(klon);
+    //document.querySelector(".forretter").appendChild(klon);
+    console.log("." + produkt.kategori)
+
+    document.querySelector("." + produkt.kategori).appendChild(klon);
+
 }
